@@ -14,14 +14,26 @@ class ModelCatalogInformation extends Model {
 
 
 	public function addStaticData($data) {
-		var_dump($data); 
+		//var_dump($data); 
 	 
-		exit; 
-		$this->db->query("INSERT INTO  my_web_news  SET title = '" . $this->db->escape($data['firstname']) . "', lastname = '" . $this->db->escape($data['lastname']) . "', company = '" . $this->db->escape($data['company']) . "', address_1 = '" . $this->db->escape($data['address_1']) . "', address_2 = '" . $this->db->escape($data['address_2']) . "', postcode = '" . $this->db->escape($data['postcode']) . "', city = '" . $this->db->escape($data['city']) . "', zone_id = '" . (int)$data['zone_id'] . "', country_id = '" . (int)$data['country_id'] . "', custom_field = '" . $this->db->escape(isset($data['custom_field']) ? json_encode($data['custom_field']) : '') . "'");
+		//exit; 
+		// $this->db->query("INSERT INTO  my_web_news  SET 
+		//  title = '" . $this->db->escape($data['title']) . "', 
+		//  description = '" . $this->db->escape($data['description']) . "'");
+		$mysql_date_now = date("Y-m-d H:i:s");
+		$timestamp = strtotime($mysql_date_now);
+		
+		 $this->db->query("INSERT INTO  my_web_news  SET 
+		 title = '" . $this->db->escape($data['title']) . "', 
+		 description = '" . $this->db->escape($data['description']) . "', 
+		 date_added = '" . $timestamp. "'");
 
-		$address_id = $this->db->getLastId();
+		 //var_dump($this); 
+		 //exit; 
 
-		return $address_id;
+		//$address_id = $this->db->getLastId();
+
+		//return $address_id;
 	}
 
 	public function getInformationLayoutId($information_id) {

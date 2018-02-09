@@ -4,57 +4,53 @@ class ControllerInformationNews extends Controller { // Controller - This is a c
    public function index() {
       $this->language->load('information/news'); // Calling for my language file
       $this->load->model('catalog/news'); // Calling for my model file
- 
+
       $this->document->setTitle($this->language->get('heading_title')); // Set the title of your web page.
  
-      $this->data['breadcrumbs'] = array(); // Breadcrumbs for your website.
-      $this->data['breadcrumbs'][] = array(
+      $data['breadcrumbs'] = array(); // Breadcrumbs for your website.
+      $data['breadcrumbs'][] = array(
          'text' => $this->language->get('text_home'),
          'href' => $this->url->link('common/home'),
          'separator' => false
       );
-      $this->data['breadcrumbs'][] = array(
+
+    
+      $data['breadcrumbs'][] = array(
          'text' => $this->language->get('heading_title'),
          'href' => $this->url->link('information/news'),
          'separator' => $this->language->get('text_separator')
       );
  
       // Text from language file
-      $this->data['heading_title'] = $this->language->get('heading_title');
-      $this->data['text_title'] = $this->language->get('text_title');
-      $this->data['text_description'] = $this->language->get('text_description');
-      $this->data['text_view'] = $this->language->get('text_view');
- 
+      $data['heading_title'] = $this->language->get('heading_title');
+      $data['text_title'] = $this->language->get('text_title');
+      $data['text_description'] = $this->language->get('text_description');
+      $data['text_view'] = $this->language->get('text_view');
+      
       // Calling for the function getAllNews from the model file
       $all_news = $this->model_catalog_news->getAllNews();
- 
-      $this->data['all_news'] = array();
+       
+      $data['all_news'] = array();
  
       foreach ($all_news as $news) {
-         $this->data['all_news'][] = array (
+         $data['all_news'][] = array (
             'title' => $news['title'],
             'description' => (strlen(html_entity_decode($news['description'])) > 50 ? substr(strip_tags(html_entity_decode($news['description'])), 0, 50) . '..' : html_entity_decode($news['description'])),
             'view' => $this->url->link('information/news/news', 'news_id=' . $news['news_id'])
          );
       }
  
-      // We call this Fallback system
-      if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/information/news_list.tpl')) { // if file exists in your current template folder
-         $this->template = $this->config->get('config_template') . '/template/information/news_list.tpl'; // get it
-      } else {
-         $this->template = 'default/template/information/news_list.tpl'; // or else get the file from the default folder (this is a fall back folder) always remember to have your template file in the default folder.
-      }
+    
+         
  
-      $this->children = array( // Required. The children files for the page.
-         'common/column_left', // Column left which will allow you to place modules at the left of your page.
-         'common/column_right',
-         'common/content_top',
-         'common/content_bottom',
-         'common/footer', // the footer of your website
-         'common/header'
-      );
+    $data['column_left'] = $this->load->controller('common/column_left');
+    $data['column_right'] = $this->load->controller('common/column_right');
+    $data['content_top'] = $this->load->controller('common/content_top');
+    $data['content_bottom'] = $this->load->controller('common/content_bottom');
+    $data['footer'] = $this->load->controller('common/footer');
+    $data['header'] = $this->load->controller('common/header');
  
-      $this->response->setOutput($this->render()); // Let's display it all!
+      $this->response->setOutput($this->load->view('information/news_list.tpl',$data)); // Let's display it all!
    }
  
    public function news() {

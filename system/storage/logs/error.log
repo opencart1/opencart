@@ -74,3 +74,83 @@
 2018-02-09 12:01:35 - PHP Warning:  copy(/var/www/html/opencart/image/cache/catalog/demo/manufacturer/disney-130x100.png): failed to open stream: Permission denied in /var/www/html/opencart/catalog/model/tool/image.php on line 37
 2018-02-09 12:01:35 - PHP Warning:  copy(/var/www/html/opencart/image/cache/catalog/demo/manufacturer/starbucks-130x100.png): failed to open stream: Permission denied in /var/www/html/opencart/catalog/model/tool/image.php on line 37
 2018-02-09 12:01:35 - PHP Warning:  copy(/var/www/html/opencart/image/cache/catalog/demo/manufacturer/nintendo-130x100.png): failed to open stream: Permission denied in /var/www/html/opencart/catalog/model/tool/image.php on line 37
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: text_location in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 18
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: image in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 22
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: store in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 25
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: address in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 27
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: geocode in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 29
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: text_telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 33
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 34
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: fax in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 36
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: open in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 42
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: comment in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 47
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: locations in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 55
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 103
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: text_staticnew in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 105
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: entry_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 107
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: title in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 109
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: error_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 110
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: entry_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 116
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 118
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: error_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 119
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: entry_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 125
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: description in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 127
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: error_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 128
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 133
+2018-02-09 12:32:49 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: text_location in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 18
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: image in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 22
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: store in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 25
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: address in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 27
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: geocode in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 29
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: text_telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 33
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 34
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: fax in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 36
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: open in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 42
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: comment in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 47
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: locations in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 55
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 103
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: text_staticnew in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 105
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: entry_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 107
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: title in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 109
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: error_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 110
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: entry_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 116
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 118
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: error_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 119
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: entry_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 125
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: description in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 127
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: error_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 128
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 133
+2018-02-09 12:33:01 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
+2018-02-09 13:00:28 - PHP Notice:  Undefined index: company in /var/www/html/opencart/catalog/model/catalog/information.php on line 22
+2018-02-09 13:02:35 - PHP Notice:  Undefined index: company in /var/www/html/opencart/catalog/model/catalog/information.php on line 22
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 10
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 11
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 16
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 23
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 24
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 25
+2018-02-09 17:06:32 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 26
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 10
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 11
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 16
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 23
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 24
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 25
+2018-02-09 17:12:25 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 26
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 10
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 11
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 16
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 23
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 24
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 25
+2018-02-09 17:16:42 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 26
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 10
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 11
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 16
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 23
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 24
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 25
+2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 26
+2018-02-09 17:22:32 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 17:22:32 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19

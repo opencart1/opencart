@@ -11,7 +11,8 @@ class ModelCatalogNews extends Model { // Model - type of file this is. Catalog 
    }
  
    public function getAllNews() {
-      $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "my_web_news ORDER BY date_added DESC");
+       $sql = "SELECT * FROM " . DB_PREFIX . "my_web_news ORDER BY date_added DESC"; 
+      $query = $this->db->query( $sql);
  
       return $query->rows;
    }
