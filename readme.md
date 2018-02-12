@@ -1,4 +1,10 @@
 ## This is for Opencart URL:
+
+### For Create a Dashboard Module called Recent Customer Details in OpenCart
+#### Source: https://code.tutsplus.com/tutorials/create-a-dashboard-module-in-opencart--cms-25271
+
+Go To http://localhost/opencart/admin/index.php
+
 Navigate to
 
 http://localhost/opencart/index.php?route=information/news
