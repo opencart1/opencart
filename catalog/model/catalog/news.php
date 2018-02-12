@@ -10,11 +10,33 @@ class ModelCatalogNews extends Model { // Model - type of file this is. Catalog 
       }
    }
  
-   public function getAllNews() {
-       $sql = "SELECT * FROM " . DB_PREFIX . "my_web_news ORDER BY date_added DESC"; 
-      $query = $this->db->query( $sql);
- 
-      return $query->rows;
-   }
+   
+
+
+   public function getAllNews($data) {
+    $sql = "SELECT * FROM " . DB_PREFIX . "news n LEFT JOIN " . DB_PREFIX . "news_description nd ON n.news_id = nd.news_id WHERE nd.language_id = '" . (int)$this->config->get('config_language_id') . "' ORDER BY date_added DESC";
+
+    if (isset($data['start']) || isset($data['limit'])) {
+        if ($data['start'] < 0) {
+            $data['start'] = 0;
+        }
+            if ($data['limit'] < 1) {
+            $data['limit'] = 20;
+        }
+
+          $sql .= " LIMIT " . (int)$data['start'] . "," . (int)$data['limit'];
+    }
+
+    $query = $this->db->query($sql);
+
+    return $query->rows;
+}
+
+public function countNews() {
+    $count = $this->db->query("SELECT * FROM " . DB_PREFIX . "news");
+
+    return $count->num_rows;
+}
+
 }
 ?>

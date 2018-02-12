@@ -269,3 +269,169 @@
 2018-02-12 15:06:14 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
 2018-02-12 16:13:15 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
 2018-02-12 16:13:15 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 16:43:25 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 16:43:25 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 30
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 32
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 38
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 49
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 57
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 84
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 86
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 88
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 89
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 90
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 91
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 93
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 94
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 96
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 97
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 99
+2018-02-12 17:15:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:16:41 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 17:16:41 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 17:18:13 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 17:18:13 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 17:29:07 - PHP Notice:  Undefined variable: allnews in /var/www/html/opencart/catalog/controller/information/news.php on line 49
+2018-02-12 17:29:25 - PHP Notice:  Undefined variable: allnews in /var/www/html/opencart/catalog/controller/information/news.php on line 49
+2018-02-12 17:30:29 - PHP Notice:  Undefined variable: allnews in /var/www/html/opencart/catalog/controller/information/news.php on line 49
+2018-02-12 17:36:44 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/controller/information/news.php on line 54
+2018-02-12 17:36:44 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/controller/information/news.php on line 54
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 30
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 32
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 38
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 49
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 57
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 84
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 86
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 88
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 89
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 90
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 91
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 93
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 94
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 96
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 97
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 99
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:44:22 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 30
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 32
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 38
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 49
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 57
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 84
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 86
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 88
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 89
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 90
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 91
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 93
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 94
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 96
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 97
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 99
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 119
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 120
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 121
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 122
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 123
+2018-02-12 17:45:52 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 124
+2018-02-12 17:45:52 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/system/engine/loader.php on line 83
+2018-02-12 17:45:52 - PHP Notice:  Error: Could not load template /var/www/html/opencart/admin/view/template/information/news_list.tpl! in /var/www/html/opencart/system/library/template/php.php on line 23
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 30
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 32
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 38
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 49
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 57
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 84
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 86
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 88
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 89
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 90
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 91
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 93
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 94
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 96
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 97
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 99
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 104
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 119
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 120
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 121
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 122
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 123
+2018-02-12 17:46:21 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 124
+2018-02-12 17:46:21 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/system/engine/loader.php on line 83
+2018-02-12 17:46:21 - PHP Notice:  Error: Could not load template /var/www/html/opencart/admin/view/template/information/news_list.tpl! in /var/www/html/opencart/system/library/template/php.php on line 23
+2018-02-12 17:47:31 - PHP Notice:  Error: Could not load template /var/www/html/opencart/admin/view/template/information/news_list.tpl! in /var/www/html/opencart/system/library/template/php.php on line 23
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 184
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 195
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 197
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 203
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 209
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 210
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 211
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 221
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 223
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 224
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 225
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 226
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 227
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 228
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 230
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 231
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 233
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 246
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 254
+2018-02-12 17:52:15 - PHP Notice:  Indirect modification of overloaded property ControllerExtensionNews::$data has no effect in /var/www/html/opencart/admin/controller/extension/news.php on line 262
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: breadcrumbs in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 4
+2018-02-12 17:54:04 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 4
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: error in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 8
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: cancel in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 14
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 17
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 59
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 60
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 61
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 62
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 63
+2018-02-12 17:54:04 - PHP Notice:  Undefined variable: token in /var/www/html/opencart/admin/view/template/extension/news_form.tpl on line 64
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:07:03 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:08:57 - PHP Notice:  Undefined index: short_description in /var/www/html/opencart/catalog/controller/extension/module/news.php on line 22
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: text_location in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 18
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: image in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 22
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: store in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 25
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: address in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 27
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: geocode in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 29
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: text_telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 33
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: telephone in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 34
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: fax in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 36
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: open in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 42
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: comment in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 47
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: locations in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 55
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: action in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 103
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: text_staticnew in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 105
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: entry_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 107
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: title in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 109
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: error_name in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 110
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: entry_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 116
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 118
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: error_email in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 119
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: entry_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 125
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: description in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 127
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: error_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 128
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 133
+2018-02-12 18:18:25 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
