@@ -31,14 +31,18 @@ http://localhost/opencart/index.php?route=information/staticnew
 #### Source: http://www.opencartnews.com/tutorials/creating-a-custom-page-in-opencart-part-2/
 GoTo: http://localhost/opencart/admin/index.php?route=information/news
 
+### CREATING OPENCART MODULES PART (mymodule.zip)
+#### Source: https://opencart-training.com/creating-opencart-modules-part-4
+Goto: http://localhost/opencart/admin/index.php?route=module/mymodule
 
 http://localhost/opencart/admin/index.php?route=extension/module
 
 http://localhost/opencart/admin/index.php?route=catalog/todolist
 
-http://localhost/opencart/admin/index.php?route=user/user_permission/edit
 
 <hr/>
+http://localhost/opencart/admin/index.php?route=user/user_permission/edit
+
 <b><p>Edit User Group to grant all permision inorder to prevent opencart You do 
 not have permission to access this page, please refer to your system 
 administrator.</b></p>

@@ -267,3 +267,5 @@
 2018-02-12 15:06:14 - PHP Notice:  Undefined variable: error_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 128
 2018-02-12 15:06:14 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 133
 2018-02-12 15:06:14 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
+2018-02-12 16:13:15 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 16:13:15 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
