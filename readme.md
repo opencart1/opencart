@@ -11,14 +11,17 @@ http://localhost/opencart/admin/index.php?route=information/news
 
 
 
-
+http://localhost/opencart/admin/index.php?route=catalog/todolist
 
 http://localhost/opencart/admin/index.php?route=user/user_permission/edit
 
-Edit User Group to grant all permision inorder to prevent opencart You do not have permission to access this page, please refer to your system administrator.
+Edit User Group to grant all permision inorder to prevent opencart You do 
+not have permission to access this page, please refer to your system 
+administrator.
+<br/>
+catalog/todolist <br/>
+dashboard/recentcustomers <br/>
+extension/module/first_module <br/>
+extension/news <br/>
 
-catalog/todolist
-dashboard/recentcustomers
-extension/module/first_module
-extension/news
 

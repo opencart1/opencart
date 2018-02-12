@@ -1,69 +1,69 @@
 <?php
 class ModelCatalogTodolist extends Model {
-	public function addManufacturer($data) {
-		$this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer SET name = '" . $this->db->escape($data['name']) . "', sort_order = '" . (int)$data['sort_order'] . "'");
+	public function addtodolist($data) {
+		$this->db->query("INSERT INTO " . DB_PREFIX . "todolist SET name = '" . $this->db->escape($data['name']) . "', sort_order = '" . (int)$data['sort_order'] . "'");
 
-		$manufacturer_id = $this->db->getLastId();
+		$todolist_id = $this->db->getLastId();
 
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET image = '" . $this->db->escape($data['image']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "todolist SET image = '" . $this->db->escape($data['image']) . "' WHERE todolist_id = '" . (int)$todolist_id . "'");
 		}
 
-		if (isset($data['manufacturer_store'])) {
-			foreach ($data['manufacturer_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer_to_store SET manufacturer_id = '" . (int)$manufacturer_id . "', store_id = '" . (int)$store_id . "'");
+		if (isset($data['todolist_store'])) {
+			foreach ($data['todolist_store'] as $store_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "todolist_to_store SET todolist_id = '" . (int)$todolist_id . "', store_id = '" . (int)$store_id . "'");
 			}
 		}
 
 		if (isset($data['keyword'])) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'manufacturer_id=" . (int)$manufacturer_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'todolist_id=" . (int)$todolist_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
 		}
 
-		$this->cache->delete('manufacturer');
+		$this->cache->delete('todolist');
 
-		return $manufacturer_id;
+		return $todolist_id;
 	}
 
-	public function editManufacturer($manufacturer_id, $data) {
-		$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET name = '" . $this->db->escape($data['name']) . "', sort_order = '" . (int)$data['sort_order'] . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+	public function edittodolist($todolist_id, $data) {
+		$this->db->query("UPDATE " . DB_PREFIX . "todolist SET name = '" . $this->db->escape($data['name']) . "', sort_order = '" . (int)$data['sort_order'] . "' WHERE todolist_id = '" . (int)$todolist_id . "'");
 
 		if (isset($data['image'])) {
-			$this->db->query("UPDATE " . DB_PREFIX . "manufacturer SET image = '" . $this->db->escape($data['image']) . "' WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+			$this->db->query("UPDATE " . DB_PREFIX . "todolist SET image = '" . $this->db->escape($data['image']) . "' WHERE todolist_id = '" . (int)$todolist_id . "'");
 		}
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "manufacturer_to_store WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "todolist_to_store WHERE todolist_id = '" . (int)$todolist_id . "'");
 
-		if (isset($data['manufacturer_store'])) {
-			foreach ($data['manufacturer_store'] as $store_id) {
-				$this->db->query("INSERT INTO " . DB_PREFIX . "manufacturer_to_store SET manufacturer_id = '" . (int)$manufacturer_id . "', store_id = '" . (int)$store_id . "'");
+		if (isset($data['todolist_store'])) {
+			foreach ($data['todolist_store'] as $store_id) {
+				$this->db->query("INSERT INTO " . DB_PREFIX . "todolist_to_store SET todolist_id = '" . (int)$todolist_id . "', store_id = '" . (int)$store_id . "'");
 			}
 		}
 
-		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'manufacturer_id=" . (int)$manufacturer_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'todolist_id=" . (int)$todolist_id . "'");
 
 		if ($data['keyword']) {
-			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'manufacturer_id=" . (int)$manufacturer_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
+			$this->db->query("INSERT INTO " . DB_PREFIX . "url_alias SET query = 'todolist_id=" . (int)$todolist_id . "', keyword = '" . $this->db->escape($data['keyword']) . "'");
 		}
 
-		$this->cache->delete('manufacturer');
+		$this->cache->delete('todolist');
 	}
 
-	public function deleteManufacturer($manufacturer_id) {
-		$this->db->query("DELETE FROM " . DB_PREFIX . "manufacturer WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "manufacturer_to_store WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
-		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'manufacturer_id=" . (int)$manufacturer_id . "'");
+	public function deletetodolist($todolist_id) {
+		$this->db->query("DELETE FROM " . DB_PREFIX . "todolist WHERE todolist_id = '" . (int)$todolist_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "todolist_to_store WHERE todolist_id = '" . (int)$todolist_id . "'");
+		$this->db->query("DELETE FROM " . DB_PREFIX . "url_alias WHERE query = 'todolist_id=" . (int)$todolist_id . "'");
 
-		$this->cache->delete('manufacturer');
+		$this->cache->delete('todolist');
 	}
 
-	public function getManufacturer($manufacturer_id) {
-		$query = $this->db->query("SELECT DISTINCT *, (SELECT keyword FROM " . DB_PREFIX . "url_alias WHERE query = 'manufacturer_id=" . (int)$manufacturer_id . "') AS keyword FROM " . DB_PREFIX . "manufacturer WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+	public function gettodolist($todolist_id) {
+		$query = $this->db->query("SELECT DISTINCT *, (SELECT keyword FROM " . DB_PREFIX . "url_alias WHERE query = 'todolist_id=" . (int)$todolist_id . "') AS keyword FROM " . DB_PREFIX . "todolist WHERE todolist_id = '" . (int)$todolist_id . "'");
 
 		return $query->row;
 	}
 
-	public function getManufacturers($data = array()) {
-		$sql = "SELECT * FROM " . DB_PREFIX . "manufacturer";
+	public function gettodolists($data = array()) {
+		$sql = "SELECT * FROM " . DB_PREFIX . "todolist";
 
 		if (!empty($data['filter_name'])) {
 			$sql .= " WHERE name LIKE '" . $this->db->escape($data['filter_name']) . "%'";
@@ -103,20 +103,20 @@ class ModelCatalogTodolist extends Model {
 		return $query->rows;
 	}
 
-	public function getManufacturerStores($manufacturer_id) {
-		$manufacturer_store_data = array();
+	public function gettodolistStores($todolist_id) {
+		$todolist_store_data = array();
 
-		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "manufacturer_to_store WHERE manufacturer_id = '" . (int)$manufacturer_id . "'");
+		$query = $this->db->query("SELECT * FROM " . DB_PREFIX . "todolist_to_store WHERE todolist_id = '" . (int)$todolist_id . "'");
 
 		foreach ($query->rows as $result) {
-			$manufacturer_store_data[] = $result['store_id'];
+			$todolist_store_data[] = $result['store_id'];
 		}
 
-		return $manufacturer_store_data;
+		return $todolist_store_data;
 	}
 
-	public function getTotalManufacturers() {
-		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "manufacturer");
+	public function getTotaltodolists() {
+		$query = $this->db->query("SELECT COUNT(*) AS total FROM " . DB_PREFIX . "todolist");
 
 		return $query->row['total'];
 	}

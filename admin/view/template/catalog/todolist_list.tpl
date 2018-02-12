@@ -3,7 +3,7 @@
   <div class="page-header">
     <div class="container-fluid">
       <div class="pull-right"><a href="<?php echo $add; ?>" data-toggle="tooltip" title="<?php echo $button_add; ?>" class="btn btn-primary"><i class="fa fa-plus"></i></a>
-        <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" class="btn btn-danger" onclick="confirm('<?php echo $text_confirm; ?>') ? $('#form-manufacturer').submit() : false;"><i class="fa fa-trash-o"></i></button>
+        <button type="button" data-toggle="tooltip" title="<?php echo $button_delete; ?>" class="btn btn-danger" onclick="confirm('<?php echo $text_confirm; ?>') ? $('#form-todolist').submit() : false;"><i class="fa fa-trash-o"></i></button>
       </div>
       <h1><?php echo $heading_title; ?></h1>
       <ul class="breadcrumb">
@@ -29,7 +29,7 @@
         <h3 class="panel-title"><i class="fa fa-list"></i> <?php echo $text_list; ?></h3>
       </div>
       <div class="panel-body">
-        <form action="<?php echo $delete; ?>" method="post" enctype="multipart/form-data" id="form-manufacturer">
+        <form action="<?php echo $delete; ?>" method="post" enctype="multipart/form-data" id="form-todolist">
           <div class="table-responsive">
             <table class="table table-bordered table-hover">
               <thead>
@@ -49,17 +49,17 @@
                 </tr>
               </thead>
               <tbody>
-                <?php if ($manufacturers) { ?>
-                <?php foreach ($manufacturers as $manufacturer) { ?>
+                <?php if ($todolists) { ?>
+                <?php foreach ($todolists as $todolist) { ?>
                 <tr>
-                  <td class="text-center"><?php if (in_array($manufacturer['manufacturer_id'], $selected)) { ?>
-                    <input type="checkbox" name="selected[]" value="<?php echo $manufacturer['manufacturer_id']; ?>" checked="checked" />
+                  <td class="text-center"><?php if (in_array($todolist['todolist_id'], $selected)) { ?>
+                    <input type="checkbox" name="selected[]" value="<?php echo $todolist['todolist_id']; ?>" checked="checked" />
                     <?php } else { ?>
-                    <input type="checkbox" name="selected[]" value="<?php echo $manufacturer['manufacturer_id']; ?>" />
+                    <input type="checkbox" name="selected[]" value="<?php echo $todolist['todolist_id']; ?>" />
                     <?php } ?></td>
-                  <td class="text-left"><?php echo $manufacturer['name']; ?></td>
-                  <td class="text-right"><?php echo $manufacturer['sort_order']; ?></td>
-                  <td class="text-right"><a href="<?php echo $manufacturer['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
+                  <td class="text-left"><?php echo $todolist['name']; ?></td>
+                  <td class="text-right"><?php echo $todolist['sort_order']; ?></td>
+                  <td class="text-right"><a href="<?php echo $todolist['edit']; ?>" data-toggle="tooltip" title="<?php echo $button_edit; ?>" class="btn btn-primary"><i class="fa fa-pencil"></i></a></td>
                 </tr>
                 <?php } ?>
                 <?php } else { ?>

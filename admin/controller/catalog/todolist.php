@@ -3,24 +3,24 @@ class ControllerCatalogTodolist extends Controller {
 	private $error = array();
 
 	public function index() {
-		$this->load->language('catalog/manufacturer');
+		$this->load->language('catalog/todolist');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/manufacturer');
+		$this->load->model('catalog/todolist');
 
 		$this->getList();
 	}
 
 	public function add() {
-		$this->load->language('catalog/manufacturer');
+		$this->load->language('catalog/todolist');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/manufacturer');
+		$this->load->model('catalog/todolist');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_catalog_manufacturer->addManufacturer($this->request->post);
+			$this->model_catalog_todolist->addtodolist($this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -38,21 +38,21 @@ class ControllerCatalogTodolist extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true));
+			$this->response->redirect($this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true));
 		}
 
 		$this->getForm();
 	}
 
 	public function edit() {
-		$this->load->language('catalog/manufacturer');
+		$this->load->language('catalog/todolist');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/manufacturer');
+		$this->load->model('catalog/todolist');
 
 		if (($this->request->server['REQUEST_METHOD'] == 'POST') && $this->validateForm()) {
-			$this->model_catalog_manufacturer->editManufacturer($this->request->get['manufacturer_id'], $this->request->post);
+			$this->model_catalog_todolist->edittodolist($this->request->get['todolist_id'], $this->request->post);
 
 			$this->session->data['success'] = $this->language->get('text_success');
 
@@ -70,22 +70,22 @@ class ControllerCatalogTodolist extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true));
+			$this->response->redirect($this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true));
 		}
 
 		$this->getForm();
 	}
 
 	public function delete() {
-		$this->load->language('catalog/manufacturer');
+		$this->load->language('catalog/todolist');
 
 		$this->document->setTitle($this->language->get('heading_title'));
 
-		$this->load->model('catalog/manufacturer');
+		$this->load->model('catalog/todolist');
 
 		if (isset($this->request->post['selected']) && $this->validateDelete()) {
-			foreach ($this->request->post['selected'] as $manufacturer_id) {
-				$this->model_catalog_manufacturer->deleteManufacturer($manufacturer_id);
+			foreach ($this->request->post['selected'] as $todolist_id) {
+				$this->model_catalog_todolist->deletetodolist($todolist_id);
 			}
 
 			$this->session->data['success'] = $this->language->get('text_success');
@@ -104,7 +104,7 @@ class ControllerCatalogTodolist extends Controller {
 				$url .= '&page=' . $this->request->get['page'];
 			}
 
-			$this->response->redirect($this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true));
+			$this->response->redirect($this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true));
 		}
 
 		$this->getList();
@@ -152,13 +152,13 @@ class ControllerCatalogTodolist extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true)
+			'href' => $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true)
 		);
 
-		$data['add'] = $this->url->link('catalog/manufacturer/add', 'token=' . $this->session->data['token'] . $url, true);
-		$data['delete'] = $this->url->link('catalog/manufacturer/delete', 'token=' . $this->session->data['token'] . $url, true);
+		$data['add'] = $this->url->link('catalog/todolist/add', 'token=' . $this->session->data['token'] . $url, true);
+		$data['delete'] = $this->url->link('catalog/todolist/delete', 'token=' . $this->session->data['token'] . $url, true);
 
-		$data['manufacturers'] = array();
+		$data['todolists'] = array();
 
 		$filter_data = array(
 			'sort'  => $sort,
@@ -167,16 +167,16 @@ class ControllerCatalogTodolist extends Controller {
 			'limit' => $this->config->get('config_limit_admin')
 		);
 
-		$manufacturer_total = $this->model_catalog_manufacturer->getTotalManufacturers();
+		$todolist_total = $this->model_catalog_todolist->getTotaltodolists();
 
-		$results = $this->model_catalog_manufacturer->getManufacturers($filter_data);
+		$results = $this->model_catalog_todolist->gettodolists($filter_data);
 
 		foreach ($results as $result) {
-			$data['manufacturers'][] = array(
-				'manufacturer_id' => $result['manufacturer_id'],
+			$data['todolists'][] = array(
+				'todolist_id' => $result['todolist_id'],
 				'name'            => $result['name'],
 				'sort_order'      => $result['sort_order'],
-				'edit'            => $this->url->link('catalog/manufacturer/edit', 'token=' . $this->session->data['token'] . '&manufacturer_id=' . $result['manufacturer_id'] . $url, true)
+				'edit'            => $this->url->link('catalog/todolist/edit', 'token=' . $this->session->data['token'] . '&todolist_id=' . $result['todolist_id'] . $url, true)
 			);
 		}
 
@@ -226,8 +226,8 @@ class ControllerCatalogTodolist extends Controller {
 			$url .= '&page=' . $this->request->get['page'];
 		}
 
-		$data['sort_name'] = $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . '&sort=name' . $url, true);
-		$data['sort_sort_order'] = $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . '&sort=sort_order' . $url, true);
+		$data['sort_name'] = $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . '&sort=name' . $url, true);
+		$data['sort_sort_order'] = $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . '&sort=sort_order' . $url, true);
 
 		$url = '';
 
@@ -240,14 +240,14 @@ class ControllerCatalogTodolist extends Controller {
 		}
 
 		$pagination = new Pagination();
-		$pagination->total = $manufacturer_total;
+		$pagination->total = $todolist_total;
 		$pagination->page = $page;
 		$pagination->limit = $this->config->get('config_limit_admin');
-		$pagination->url = $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
+		$pagination->url = $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url . '&page={page}', true);
 
 		$data['pagination'] = $pagination->render();
 
-		$data['results'] = sprintf($this->language->get('text_pagination'), ($manufacturer_total) ? (($page - 1) * $this->config->get('config_limit_admin')) + 1 : 0, ((($page - 1) * $this->config->get('config_limit_admin')) > ($manufacturer_total - $this->config->get('config_limit_admin'))) ? $manufacturer_total : ((($page - 1) * $this->config->get('config_limit_admin')) + $this->config->get('config_limit_admin')), $manufacturer_total, ceil($manufacturer_total / $this->config->get('config_limit_admin')));
+		$data['results'] = sprintf($this->language->get('text_pagination'), ($todolist_total) ? (($page - 1) * $this->config->get('config_limit_admin')) + 1 : 0, ((($page - 1) * $this->config->get('config_limit_admin')) > ($todolist_total - $this->config->get('config_limit_admin'))) ? $todolist_total : ((($page - 1) * $this->config->get('config_limit_admin')) + $this->config->get('config_limit_admin')), $todolist_total, ceil($todolist_total / $this->config->get('config_limit_admin')));
 
 		$data['sort'] = $sort;
 		$data['order'] = $order;
@@ -256,13 +256,13 @@ class ControllerCatalogTodolist extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('catalog/manufacturer_list', $data));
+		$this->response->setOutput($this->load->view('catalog/todolist_list', $data));
 	}
 
 	protected function getForm() {
 		$data['heading_title'] = $this->language->get('heading_title');
 
-		$data['text_form'] = !isset($this->request->get['manufacturer_id']) ? $this->language->get('text_add') : $this->language->get('text_edit');
+		$data['text_form'] = !isset($this->request->get['todolist_id']) ? $this->language->get('text_add') : $this->language->get('text_edit');
 		$data['text_enabled'] = $this->language->get('text_enabled');
 		$data['text_disabled'] = $this->language->get('text_disabled');
 		$data['text_default'] = $this->language->get('text_default');
@@ -322,27 +322,27 @@ class ControllerCatalogTodolist extends Controller {
 
 		$data['breadcrumbs'][] = array(
 			'text' => $this->language->get('heading_title'),
-			'href' => $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true)
+			'href' => $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true)
 		);
 
-		if (!isset($this->request->get['manufacturer_id'])) {
-			$data['action'] = $this->url->link('catalog/manufacturer/add', 'token=' . $this->session->data['token'] . $url, true);
+		if (!isset($this->request->get['todolist_id'])) {
+			$data['action'] = $this->url->link('catalog/todolist/add', 'token=' . $this->session->data['token'] . $url, true);
 		} else {
-			$data['action'] = $this->url->link('catalog/manufacturer/edit', 'token=' . $this->session->data['token'] . '&manufacturer_id=' . $this->request->get['manufacturer_id'] . $url, true);
+			$data['action'] = $this->url->link('catalog/todolist/edit', 'token=' . $this->session->data['token'] . '&todolist_id=' . $this->request->get['todolist_id'] . $url, true);
 		}
 
-		$data['cancel'] = $this->url->link('catalog/manufacturer', 'token=' . $this->session->data['token'] . $url, true);
+		$data['cancel'] = $this->url->link('catalog/todolist', 'token=' . $this->session->data['token'] . $url, true);
 
-		if (isset($this->request->get['manufacturer_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
-			$manufacturer_info = $this->model_catalog_manufacturer->getManufacturer($this->request->get['manufacturer_id']);
+		if (isset($this->request->get['todolist_id']) && ($this->request->server['REQUEST_METHOD'] != 'POST')) {
+			$todolist_info = $this->model_catalog_todolist->gettodolist($this->request->get['todolist_id']);
 		}
 
 		$data['token'] = $this->session->data['token'];
 
 		if (isset($this->request->post['name'])) {
 			$data['name'] = $this->request->post['name'];
-		} elseif (!empty($manufacturer_info)) {
-			$data['name'] = $manufacturer_info['name'];
+		} elseif (!empty($todolist_info)) {
+			$data['name'] = $todolist_info['name'];
 		} else {
 			$data['name'] = '';
 		}
@@ -351,26 +351,26 @@ class ControllerCatalogTodolist extends Controller {
 
 		$data['stores'] = $this->model_setting_store->getStores();
 
-		if (isset($this->request->post['manufacturer_store'])) {
-			$data['manufacturer_store'] = $this->request->post['manufacturer_store'];
-		} elseif (isset($this->request->get['manufacturer_id'])) {
-			$data['manufacturer_store'] = $this->model_catalog_manufacturer->getManufacturerStores($this->request->get['manufacturer_id']);
+		if (isset($this->request->post['todolist_store'])) {
+			$data['todolist_store'] = $this->request->post['todolist_store'];
+		} elseif (isset($this->request->get['todolist_id'])) {
+			$data['todolist_store'] = $this->model_catalog_todolist->gettodolistStores($this->request->get['todolist_id']);
 		} else {
-			$data['manufacturer_store'] = array(0);
+			$data['todolist_store'] = array(0);
 		}
 
 		if (isset($this->request->post['keyword'])) {
 			$data['keyword'] = $this->request->post['keyword'];
-		} elseif (!empty($manufacturer_info)) {
-			$data['keyword'] = $manufacturer_info['keyword'];
+		} elseif (!empty($todolist_info)) {
+			$data['keyword'] = $todolist_info['keyword'];
 		} else {
 			$data['keyword'] = '';
 		}
 
 		if (isset($this->request->post['image'])) {
 			$data['image'] = $this->request->post['image'];
-		} elseif (!empty($manufacturer_info)) {
-			$data['image'] = $manufacturer_info['image'];
+		} elseif (!empty($todolist_info)) {
+			$data['image'] = $todolist_info['image'];
 		} else {
 			$data['image'] = '';
 		}
@@ -379,8 +379,8 @@ class ControllerCatalogTodolist extends Controller {
 
 		if (isset($this->request->post['image']) && is_file(DIR_IMAGE . $this->request->post['image'])) {
 			$data['thumb'] = $this->model_tool_image->resize($this->request->post['image'], 100, 100);
-		} elseif (!empty($manufacturer_info) && is_file(DIR_IMAGE . $manufacturer_info['image'])) {
-			$data['thumb'] = $this->model_tool_image->resize($manufacturer_info['image'], 100, 100);
+		} elseif (!empty($todolist_info) && is_file(DIR_IMAGE . $todolist_info['image'])) {
+			$data['thumb'] = $this->model_tool_image->resize($todolist_info['image'], 100, 100);
 		} else {
 			$data['thumb'] = $this->model_tool_image->resize('no_image.png', 100, 100);
 		}
@@ -389,8 +389,8 @@ class ControllerCatalogTodolist extends Controller {
 
 		if (isset($this->request->post['sort_order'])) {
 			$data['sort_order'] = $this->request->post['sort_order'];
-		} elseif (!empty($manufacturer_info)) {
-			$data['sort_order'] = $manufacturer_info['sort_order'];
+		} elseif (!empty($todolist_info)) {
+			$data['sort_order'] = $todolist_info['sort_order'];
 		} else {
 			$data['sort_order'] = '';
 		}
@@ -399,11 +399,11 @@ class ControllerCatalogTodolist extends Controller {
 		$data['column_left'] = $this->load->controller('common/column_left');
 		$data['footer'] = $this->load->controller('common/footer');
 
-		$this->response->setOutput($this->load->view('catalog/manufacturer_form', $data));
+		$this->response->setOutput($this->load->view('catalog/todolist_form', $data));
 	}
 
 	protected function validateForm() {
-		if (!$this->user->hasPermission('modify', 'catalog/manufacturer')) {
+		if (!$this->user->hasPermission('modify', 'catalog/todolist')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
@@ -416,11 +416,11 @@ class ControllerCatalogTodolist extends Controller {
 
 			$url_alias_info = $this->model_catalog_url_alias->getUrlAlias($this->request->post['keyword']);
 
-			if ($url_alias_info && isset($this->request->get['manufacturer_id']) && $url_alias_info['query'] != 'manufacturer_id=' . $this->request->get['manufacturer_id']) {
+			if ($url_alias_info && isset($this->request->get['todolist_id']) && $url_alias_info['query'] != 'todolist_id=' . $this->request->get['todolist_id']) {
 				$this->error['keyword'] = sprintf($this->language->get('error_keyword'));
 			}
 
-			if ($url_alias_info && !isset($this->request->get['manufacturer_id'])) {
+			if ($url_alias_info && !isset($this->request->get['todolist_id'])) {
 				$this->error['keyword'] = sprintf($this->language->get('error_keyword'));
 			}
 		}
@@ -429,14 +429,14 @@ class ControllerCatalogTodolist extends Controller {
 	}
 
 	protected function validateDelete() {
-		if (!$this->user->hasPermission('modify', 'catalog/manufacturer')) {
+		if (!$this->user->hasPermission('modify', 'catalog/todolist')) {
 			$this->error['warning'] = $this->language->get('error_permission');
 		}
 
 		$this->load->model('catalog/product');
 
-		foreach ($this->request->post['selected'] as $manufacturer_id) {
-			$product_total = $this->model_catalog_product->getTotalProductsByManufacturerId($manufacturer_id);
+		foreach ($this->request->post['selected'] as $todolist_id) {
+			$product_total = $this->model_catalog_product->getTotalProductsBytodolistId($todolist_id);
 
 			if ($product_total) {
 				$this->error['warning'] = sprintf($this->language->get('error_product'), $product_total);
@@ -450,7 +450,7 @@ class ControllerCatalogTodolist extends Controller {
 		$json = array();
 
 		if (isset($this->request->get['filter_name'])) {
-			$this->load->model('catalog/manufacturer');
+			$this->load->model('catalog/todolist');
 
 			$filter_data = array(
 				'filter_name' => $this->request->get['filter_name'],
@@ -458,11 +458,11 @@ class ControllerCatalogTodolist extends Controller {
 				'limit'       => 5
 			);
 
-			$results = $this->model_catalog_manufacturer->getManufacturers($filter_data);
+			$results = $this->model_catalog_todolist->gettodolists($filter_data);
 
 			foreach ($results as $result) {
 				$json[] = array(
-					'manufacturer_id' => $result['manufacturer_id'],
+					'todolist_id' => $result['todolist_id'],
 					'name'            => strip_tags(html_entity_decode($result['name'], ENT_QUOTES, 'UTF-8'))
 				);
 			}
