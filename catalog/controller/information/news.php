@@ -1,6 +1,6 @@
 <?php
 class ControllerInformationNews extends Controller { // Controller - This is a controller file. Information - This is the folder it is in. News - This file name is news.php
- 
+private $error = array();
    public function index() {
       $this->language->load('information/news'); // Calling for my language file
       $this->load->model('catalog/news'); // Calling for my model file
@@ -28,17 +28,17 @@ class ControllerInformationNews extends Controller { // Controller - This is a c
       $data['text_view'] = $this->language->get('text_view');
       
       // Calling for the function getAllNews from the model file
-      $all_news = $this->model_catalog_news->getAllNews();
+    //   $all_news = $this->model_catalog_news->getAllNews();
        
-      $data['all_news'] = array();
+    //   $data['all_news'] = array();
  
-      foreach ($all_news as $news) {
-         $data['all_news'][] = array (
-            'title' => $news['title'],
-            'description' => (strlen(html_entity_decode($news['description'])) > 50 ? substr(strip_tags(html_entity_decode($news['description'])), 0, 50) . '..' : html_entity_decode($news['description'])),
-            'view' => $this->url->link('information/news/news', 'news_id=' . $news['news_id'])
-         );
-      }
+    //   foreach ($all_news as $news) {
+    //      $data['all_news'][] = array (
+    //         'title' => $news['title'],
+    //         'description' => (strlen(html_entity_decode($news['description'])) > 50 ? substr(strip_tags(html_entity_decode($news['description'])), 0, 50) . '..' : html_entity_decode($news['description'])),
+    //         'view' => $this->url->link('information/news/news', 'news_id=' . $news['news_id'])
+    //      );
+    //   }
  
     
          

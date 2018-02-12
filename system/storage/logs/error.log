@@ -154,3 +154,13 @@
 2018-02-09 17:16:44 - PHP Notice:  Indirect modification of overloaded property ControllerInformationNews::$data has no effect in /var/www/html/opencart/catalog/controller/information/news.php on line 26
 2018-02-09 17:22:32 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
 2018-02-09 17:22:32 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:37:29 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:37:29 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:37:53 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:37:53 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:38:06 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:38:06 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:40:07 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-09 18:40:07 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 9:46:51 - PHP Notice:  Undefined variable: all_news in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
+2018-02-12 9:46:51 - PHP Warning:  Invalid argument supplied for foreach() in /var/www/html/opencart/catalog/view/theme/default/template/information/news_list.tpl on line 19
