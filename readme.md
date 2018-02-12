@@ -41,11 +41,10 @@ http://localhost/opencart/admin/index.php?route=catalog/todolist
 
 
 <hr/>
-http://localhost/opencart/admin/index.php?route=user/user_permission/edit
-
 <b><p>Edit User Group to grant all permision inorder to prevent opencart You do 
 not have permission to access this page, please refer to your system 
 administrator.</b></p>
+http://localhost/opencart/admin/index.php?route=user/user_permission/edit
 <br/>
 catalog/todolist <br/>
 dashboard/recentcustomers <br/>
