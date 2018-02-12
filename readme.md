@@ -7,3 +7,18 @@ http://localhost/opencart/index.php?route=information/static
 
 http://localhost/opencart/index.php?route=information/staticnew
 
+http://localhost/opencart/admin/index.php?route=information/news
+
+
+
+
+
+http://localhost/opencart/admin/index.php?route=user/user_permission/edit
+
+Edit User Group to grant all permision inorder to prevent opencart You do not have permission to access this page, please refer to your system administrator.
+
+catalog/todolist
+dashboard/recentcustomers
+extension/module/first_module
+extension/news
+
