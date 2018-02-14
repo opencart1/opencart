@@ -25,6 +25,7 @@ class ModelCatalogTodolist extends Model {
 	}
 
 	public function edittodolist($todolist_id, $data) {
+		echo "dfdsf"; exit; //die.'dfsf';
 		$this->db->query("UPDATE " . DB_PREFIX . "todolist SET name = '" . $this->db->escape($data['name']) . "', sort_order = '" . (int)$data['sort_order'] . "' WHERE todolist_id = '" . (int)$todolist_id . "'");
 
 		if (isset($data['image'])) {

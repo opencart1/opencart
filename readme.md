@@ -39,7 +39,10 @@ http://localhost/opencart/admin/index.php?route=extension/module
 
 http://localhost/opencart/admin/index.php?route=catalog/todolist
 
-
+### [Free] Ajax live search
+#### https://www.opencart.com/index.php?route=marketplace/extension/info&extension_id=26240
+GoTo: http://localhost/opencart/admin/index.php?route=product/live_search
+GoTo: http://localhost/opencart/index.php?route=product/live_search
 <hr/>
 <b><p>Edit User Group to grant all permision inorder to prevent opencart You do 
 not have permission to access this page, please refer to your system 
