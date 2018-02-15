@@ -435,3 +435,71 @@
 2018-02-12 18:18:25 - PHP Notice:  Undefined variable: error_enquiry in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 128
 2018-02-12 18:18:25 - PHP Notice:  Undefined variable: captcha in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 133
 2018-02-12 18:18:25 - PHP Notice:  Undefined variable: button_submit in /var/www/html/opencart/catalog/view/theme/default/template/information/static.tpl on line 137
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:18:51 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:18:51 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:18:51 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:18:51 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:19:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:19:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:19:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:19:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:19:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:19:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:19:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:19:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:19:07 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:19:07 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:19:07 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:19:07 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:54:48 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:54:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:54:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:54:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:54:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:54:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:54:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:54:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 10:54:49 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 10:54:49 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 10:54:49 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 10:54:49 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 11:01:23 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 11:01:23 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 11:01:23 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 11:01:23 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 11:01:23 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 11:01:23 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 11:01:23 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 11:01:23 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
+2018-02-15 11:01:23 - PHP Warning:  imagecreatetruecolor(): Invalid image dimensions in /var/www/html/opencart/system/library/image.php on line 105
+2018-02-15 11:01:23 - PHP Warning:  imagecolorallocate() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 113
+2018-02-15 11:01:23 - PHP Warning:  imagefilledrectangle() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 116
+2018-02-15 11:01:23 - PHP Warning:  imagecopyresampled() expects parameter 1 to be resource, boolean given in /var/www/html/opencart/system/library/image.php on line 118
